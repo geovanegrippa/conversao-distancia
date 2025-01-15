@@ -20,3 +20,8 @@ Realize testes básicos na aplicação para verificar a funcionalidade de conver
 Suba em um repositório público com as alterações e com o Dockerfile.
 Publique a imagem do contêiner em sua conta no Dockerhub.
 Adicione o link da imagem publicada do Dockerhub em um arquivo .md no seu repositório.
+
+
+sudo docker build -t geovanegrippa/conversao-distancia .
+sudo docker run -d -p 5000:5000 --name conversao-distancia geovanegrippa/conversao-distancia
+curl -L http://127.0.0.1:5000/
